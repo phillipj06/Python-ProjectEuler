@@ -5,6 +5,9 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 '''
 
 def palFinder(maxNum,minNum):
+    '''
+    palFinder finds the largest palindromic number that is product of 2 numbers between maxNum and minNum
+    '''
     answer =0
     for i in range(maxNum,minNum-1,-1):
         for j in range(i,minNum-1,-1):
@@ -13,12 +16,19 @@ def palFinder(maxNum,minNum):
                 if (palCheck(product)):
                     answer =  product
     return answer
+
 def palCheck(num):
+    '''
+    Check if a number is palindromic
+    '''
     stringNum = str(num)
     halfPoint=len(stringNum)/2
     return stringNum[:halfPoint]==stringNum[-halfPoint:][::-1]
 
 def testLogic():
+    '''
+    Check to verify logic
+    '''
     if palFinder(99,10) != 9009:
         print 'Logic is bad. 9009 != ' + str(palFinder(99,10))
         import sys
