@@ -1,3 +1,8 @@
+'''
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+'''
 def maxPrimeFactor(number):
     # The largest factor of a number cannot be larger then the square root of the number
     maxFactor = int(number ** 0.5)
