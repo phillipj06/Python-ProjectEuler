@@ -6,6 +6,8 @@ def maxPrimeFactor(number):
             if primeCheck(maxFactor):
                 return maxFactor
         maxFactor -= 1
+    # If the while loop did not return a value then the orginal number has to be prime
+    return number
 
 # Function to check if a number is prime
 def primeCheck(num):
