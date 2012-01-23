@@ -1,3 +1,0 @@
-git add <file>
-git commit -m '<description>'
-git push -u origin master
