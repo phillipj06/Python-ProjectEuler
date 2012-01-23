@@ -1,5 +1,5 @@
-from timeIt import timeIt
+from utils import timeIt
 @timeIt
-def getAnswer():
+def problem48():
     print str(sum(i**i for i in range(1,1001)))[-10:]
-getAnswer()
+problem48()
