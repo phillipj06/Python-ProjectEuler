@@ -1,4 +1,8 @@
 from utils import timeIt
+'''
+Find the greatest product of five consecutive digits in the 1000-digit number.
+(see below for number)
+'''
 
 @timeIt
 def problem8():
@@ -9,4 +13,5 @@ def problem8():
         if (product > maxProduct): 
             maxProduct = product
     print maxProduct
+
 problem8()
